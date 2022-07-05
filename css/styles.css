@@ -78,6 +78,8 @@
 /*  -------------- Хэдер ----------------          */
 /* Логотип */
 .logo {
+  padding-top: 25px;
+  padding-bottom: 25px;
   font-family: "Raleway";
   font-weight: 700;
   font-size: 26px;
@@ -101,8 +103,8 @@
 .navigation-bar-wrapper {
   display: flex;
   justify-content: space-between;
-  padding-top: 25px;
-  padding-bottom: 25px;
+  /* padding-top: 25px;
+  padding-bottom: 25px; */
 }
 
 .navigation {
@@ -124,6 +126,14 @@
 .navigation-pages > li {
   margin-right: 50px;
 }
+
+.navigation-contacts a,
+.navigation-pages a {
+  display: block;
+  padding-top: 32px;
+  padding-bottom: 32px;
+}
+
 .navigation-pages > li:last-child {
   margin-right: 0px;
 }
@@ -219,11 +229,11 @@
 }
 
 .quality-list-item:first-child {
-  padding-left: 0;
+  margin-left: 0;
 }
 
 .quality-list-item {
-  padding-left: 30px;
+  margin-left: 30px;
   /* width: 270px; */
 }
 
@@ -267,7 +277,16 @@
 
 .ourskills-list {
   display: flex;
-  justify-content: space-between;
+  justify-content: center;
+  /* justify-content: space-between; */
+}
+
+.ourskills-list-item {
+  margin-right: 30px;
+}
+
+.ourskills-list-item:last-child {
+  margin-right: 0;
 }
 
 /* ---- Наша команда ------ */
@@ -279,7 +298,7 @@
 }
 
 .team-title {
-  padding-bottom: 50px;
+  margin-bottom: 50px;
   color: var(--title-text-color);
 }
 
@@ -297,26 +316,33 @@
   letter-spacing: 0.03em;
 }
 
+.team-list img {
+  box-sizing: border-box;
+  max-width: 100%;
+  display: block;
+}
+
 .team-name {
   color: var(--title-text-color);
   font-size: 16px;
   /* line-height: 1.187; */
-  padding-top: 30px;
-  padding-bottom: 10px;
+  /* padding-top: 30px; */
+  margin-bottom: 10px;
 }
 
 .team-content {
-  padding-bottom: 30px;
+  /* padding-bottom: 30px; */
   font-weight: 400;
+}
+
+.team-wrapper-bottom {
+  padding: 30px;
 }
 
 /*  ----------  Футер  --------------  */
 
 .page-footer {
   background-color: var(--background-color-primary);
-}
-
-.page-footer-wrapper {
   padding-top: 60px;
   padding-bottom: 60px;
 }
@@ -372,11 +398,11 @@
 }
 
 .filter-item {
-  padding-left: 8px;
+  margin-left: 8px;
 }
 
 .filter-item:first-child {
-  padding-left: 0;
+  margin-left: 0;
 }
 
 .filter-btn {
@@ -410,9 +436,10 @@
 }
 
 .template-head {
+  margin: -15px;
   display: flex;
   flex-wrap: wrap;
-  justify-content: space-between;
+  justify-content: center;
 }
 
 .template-item {
@@ -421,6 +448,7 @@
   margin-bottom: 45px;
   max-width: 370px;
   /* margin-left: 30px; */
+  margin: 15px;
 }
 
 .template-item > img {
@@ -430,8 +458,8 @@
 }
 
 .template-title {
-  padding-top: 20px;
-  padding-bottom: 4px;
+  /* padding-top: 20px;
+  padding-bottom: 4px; */
   font-weight: 700;
   font-size: 18px;
   letter-spacing: 0.06em;
@@ -439,18 +467,19 @@
 }
 
 .template-content {
-  padding-bottom: 20px;
+  /* padding-bottom: 20px; */
   font-size: 16px;
   letter-spacing: 0.03em;
 }
 
 .template-title,
 .template-content {
-  padding-left: 24px;
-  padding-right: 24px;
+  /* padding-left: 24px;
+  padding-right: 24px; */
   line-height: 2;
 }
 
 .template-wrapper-bottom {
   border: 1px solid var(--template-item-border-color);
+  padding: 20px 24px;
 }
